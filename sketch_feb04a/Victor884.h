@@ -1,12 +1,12 @@
 #ifndef VICTOR884_H
 #define VICTOR884_H
 #include <Servo.h>
-class Motor
+class Victor884
 {
 
   public:
-  Motor();
-  Motor(int pin_p);
+  Victor884();
+  Victor884(int pin_p);
 
   void run(double val);
 };

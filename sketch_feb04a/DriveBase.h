@@ -4,10 +4,10 @@
 class DriveBase
 {
   public:
-  Motor front;
-  Motor rear;
-  Motor left;
-  Motor right;
+  Victor884 front;
+  Victor884 rear;
+  Victor884 left;
+  Victor884 right;
   DriveBase();
   DriveBase(int frontPin, int rearPin, int leftPin, int rightPin);
   void assignEncoder(int motorNumber, int APin, int BPin);

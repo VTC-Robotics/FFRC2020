@@ -2,20 +2,20 @@
 #include <Arduino.h>
 #include <Servo.h>
 
-class Motor
+class Victor884
 {
 private:
   int pin;
   Servo hardware;
 public:
-  Motor()
+  Victor884()
   {
   }
   /**
    * creates a motor on the required pin, assumes the pin is a valid pwm pin.
    * @param pin_p - the pin to add the motor to
    */
-  Motor(int pin_p)
+  Victor884(int pin_p)
   {
     pin = pin_p;
     hardware.attach(pin_p);

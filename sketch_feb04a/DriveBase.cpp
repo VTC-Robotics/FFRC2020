@@ -4,10 +4,10 @@
 class DriveBase
 {
   public:
-  Motor front;
-  Motor rear;
-  Motor left;
-  Motor right;
+  Victor884 front;
+  Victor884 rear;
+  Victor884 left;
+  Victor884 right;
   DriveBase(){};
   /**
    * creates a full drive base capable of running the robot. 
@@ -19,10 +19,10 @@ class DriveBase
    */
   DriveBase(int frontPin, int rearPin, int leftPin, int rightPin)
   {
-    front = Motor(frontPin);
-    rear = Motor(rearPin);
-    left = Motor(leftPin);
-    right = Motor(rightPin);
+    front = Victor884(frontPin);
+    rear = Victor884(rearPin);
+    left = Victor884(leftPin);
+    right = Victor884(rightPin);
   }
   /**
    * assigns an encoder to a motor, a seperate function to avoid 12 parameters in constructor.

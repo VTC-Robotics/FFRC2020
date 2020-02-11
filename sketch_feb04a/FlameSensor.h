@@ -1,5 +1,5 @@
-#ifndef FlameSensor_H
-#define FlameSensor_H
+#ifndef FLAMESENSOR_H
+#define FLAMESENSOR_H
 
 class FlameSensor
 {

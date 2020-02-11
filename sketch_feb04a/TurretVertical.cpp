@@ -6,11 +6,11 @@ class TurretVertical
 
   public:
 
-  goingUP()
+  TurretVertical()
   {
     
   }
-  goingUP (int pin_p)
+  TurretVertical (int pin_p)
   {
     pin = pin_p;
   }

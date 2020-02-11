@@ -7,7 +7,7 @@ class FlameSensor
 
 
   public:
-  flameSensor()
+  FlameSensor()
   {
     
   }
@@ -15,7 +15,7 @@ class FlameSensor
    * Sets up the flame sensor on the required pin, assumes the pin is a valid pin
    * @param pin_p - the pin to set the sensor to
    */
-  flameSensor(int pin_p)
+  FlameSensor(int pin_p)
   {
     pin = pin_p;
   }

@@ -8,6 +8,9 @@ private:
   int pin;
   Servo hardware;
 public:
+  Motor()
+  {
+  }
   Motor(int pin_p)
   {
     pin = pin_p;

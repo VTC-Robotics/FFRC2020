@@ -5,6 +5,7 @@ class Motor
 {
 
   public:
+  Motor();
   Motor(int pin_p);
 
   void run(double val);

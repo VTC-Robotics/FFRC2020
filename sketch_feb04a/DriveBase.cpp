@@ -4,11 +4,17 @@
 class DriveBase
 {
   public:
+  Motor front;
+  Motor rear;
+  Motor left;
+  Motor right;
+
   DriveBase(int frontPin, int rearPin, int leftPin, int rightPin)
   {
-//    front(frontPin);
-//    rear(rearPin);
-//    left(leftPin);
-//    right(rightPin);
+    front = Motor(frontPin);
+    rear = Motor(rearPin);
+    left = Motor(leftPin);
+    right = Motor(rightPin);
+    front.run(1);
   }
 };
